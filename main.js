@@ -2,8 +2,37 @@
  * YOUR CODE HERE *
  ******************/
 
+const isOdd = function(num){
+  return num % 2 === 1
+}
 
+const onlyOdds =function(array){
+  return array.filter(isOdd)
+}
 
+const isEven = function(num){
+  return num % 2 === 0
+}
+
+const onlyEvens = function(array){
+  return array.filter(isEven)
+}
+
+const isShort = function(str){
+  return str.length < 7
+}
+
+const shortNamesOnly = function(array){
+  return array.filter(isShort)
+}
+
+const isDName = function(name){
+  return name.startsWith('D')
+}
+
+const dNames = function(array){
+  return array.filter(isDName)
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
