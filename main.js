@@ -30,9 +30,6 @@ const isDName = function(name){
   return name.startsWith('D')
 }
 
-const dNames = function(array){
-  return array.filter(isDName)
-}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
