@@ -30,6 +30,26 @@ const isDName = function(name){
   return name.startsWith('D')
 }
 
+const dNames = function (names){
+  return names.filter(isDName);
+}
+
+const containsLowercase = function(str){
+return str !== str.toUpperCase()
+}
+
+const removeTrolls = function(arr){
+  return arr.filter(containsLowercase)
+}
+
+const isTriStateArea = function(state){
+  return state.endsWith('NY') ||  state.endsWith('NJ') || state.endsWith('CT')
+}
+
+const triStateAreaOnly = function(states){
+  return states.filter(isTriStateArea)
+}
+
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
